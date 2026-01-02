@@ -1,0 +1,19 @@
+How SSL Certificates work?
+Cookies vs JWT vs Session for Authentication.
+Session vs JWT (Authentication full comparison).
+
+
+COOKIES
+What are Caching strategies (Write-through, Write-back, Write-around)?
+JWT stored in cookies (secure pattern).
+CSRF protection with cookies
+Django Sessions (how Django manages cookies internally).
+
+
+SESSION
+Login system with password hashing.
+Flask authentication middleware
+Create full login + signup + logout system.
+Django authentication system (login(), logout())
+Redis-based sessions for scalability
+Session vs JWT (Django REST APIs)
