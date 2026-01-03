@@ -12,10 +12,10 @@ app.config.update(
     CACHE_DEFAULT_TIMEOUT = 60
 )
 
-cache = Cache()
+cache = Cache(app)
 
 # Attach cache to Flask app
-cache.init_app(app)
+# cache.init_app(app)
 
 @app.route("/")
 def home():

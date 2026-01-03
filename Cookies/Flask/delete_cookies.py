@@ -1,4 +1,6 @@
-from flask import make_response
+from flask import make_response, Flask
+
+app = Flask(__name__)
 
 @app.route("/delete-cookie")
 def delete_cookie():

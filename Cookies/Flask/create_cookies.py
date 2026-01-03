@@ -1,4 +1,4 @@
-from flask import Flask, make_response
+from flask import Flask, make_response, request
 
 app = Flask(__name__)
 
@@ -15,3 +15,19 @@ def set_cookie():
     )
 
     return response
+
+@app.route('/get-cookie')
+def get_cookies():
+    username = request.cookies.get("username")
+    if username:
+        return f"Hello {username}"
+    return "No cookie found"
+
+@app.route("/delete-cookie")
+def delete_cookie():
+    response = make_response("Cookie deleted")
+    response.set_cookie("username", "", expires=0)
+    return response
+
+if __name__ == '__main__':
+    app.run(debug=False)

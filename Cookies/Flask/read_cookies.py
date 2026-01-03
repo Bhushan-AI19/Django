@@ -1,4 +1,6 @@
-from flask import request
+from flask import request, Flask
+
+app = Flask(__name__)
 
 @app.route('/get-cookie')
 def get_cookies():
