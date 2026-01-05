@@ -17,3 +17,9 @@ Create full login + signup + logout system.
 Django authentication system (login(), logout())
 Redis-based sessions for scalability
 Session vs JWT (Django REST APIs)
+
+
+Authentication
+JWT Authentication in Flask (with code)
+Session vs JWT (which to use & why)
+RBAC implementation in Flask

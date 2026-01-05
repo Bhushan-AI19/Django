@@ -54,6 +54,12 @@ def clear_cache():
     cache.clear()
     return "Cache cleared"
 
+# @app.route("/update-user/<int:user_id>")
+# def update_user(user_id):
+#     update_user_in_db(user_id)
+#     cache.delete(f"user_{user_id}")   # invalidate only this user
+#     return "User updated"
+
 
 if __name__ == "__main__":
     app.run(debug=True)
